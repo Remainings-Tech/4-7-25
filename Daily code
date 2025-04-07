@@ -44,22 +44,20 @@ int main() {
 #include <iostream>
 using namespace std;
 
-void MiniCalc(int num1, int num2) {
-    cout << "Add " << num1 + num2 << endl;
-    cout << "Sub " << num1 - num2 << endl;
-    cout << "Multiply " << num1 * num2 << endl;
-    cout << "Divide" << num1 / num2 << endl;
-}
+
+void TwoLetters(char letter1, char letter2);
 
 int main() {
-    int num1, num2;
+	char l1, l2;
+	cout << "enter two letters:" << endl;
+	cin >> l1;
+	cin >> l2;
+	TwoLetters('A', 'R');
 
-    cout << "Enter the first number ";
-    cin >> num1;
-    cout << "Enter the second number ";
-    cin >> num2;
-    MiniCalc(num1, num2);
+}
 
-    return 0;
+
+void TwoLetters(char letter1, char letter2) {
+	cout << letter1 << letter2 << endl;
 }
 
