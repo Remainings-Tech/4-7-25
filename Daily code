@@ -1,0 +1,65 @@
+//1 #include <iostream>
+using namespace std;
+int main() {
+
+	int grade;
+
+	cout << "Enter your Grade 1-12!!!(no college or above allow)" << endl;
+	cin >> grade;
+ 
+	if (grade < 6)
+		cout << "Enjoy elementary school!" << endl;
+
+	else if (grade < 9)
+		cout << "Have fun in middle school!" << endl;
+
+	else if (grade < 13)
+		cout << "Prepare well in high school!" << endl;
+
+	else
+		cout << "Thats not a grade number in schools (no college or above!!!)" << endl;
+
+}
+
+//2
+
+#include <iostream>
+using namespace std;
+int main() {
+
+	int num;
+
+	cout << "Enter a number between 10 and 100" << endl;
+	cin >> num;
+
+	for (int i = 10; i <= num; i+=2) {
+		cout << i << " ";
+
+	}
+	cout << endl;
+}
+
+//3
+
+#include <iostream>
+using namespace std;
+
+void MiniCalc(int num1, int num2) {
+    cout << "Add " << num1 + num2 << endl;
+    cout << "Sub " << num1 - num2 << endl;
+    cout << "Multiply " << num1 * num2 << endl;
+    cout << "Divide" << num1 / num2 << endl;
+}
+
+int main() {
+    int num1, num2;
+
+    cout << "Enter the first number ";
+    cin >> num1;
+    cout << "Enter the second number ";
+    cin >> num2;
+    MiniCalc(num1, num2);
+
+    return 0;
+}
+
